@@ -1,0 +1,10 @@
+set xr[0:2500]
+set yr[-2:12]
+set xlabel "time(seconds)"
+set ylabel "Exper:3"
+set xtics 200
+set ytics 0.5
+set grid
+set terminal png
+set output 'exper3.png'
+plot "usa3_fin.txt" using 1 with lines title "X-axis", "usa3_fin.txt" using 2 with lines title "Y-axis","usa3_fin.txt" using 3  title "Z-axis" with lines 
